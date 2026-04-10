@@ -1,6 +1,6 @@
 ## 💬 Simple c calculator. 
 
-### // Using:
+### Using:
 
 <p>Create an executable file using make: </p> 
 
