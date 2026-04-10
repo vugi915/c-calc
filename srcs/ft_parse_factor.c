@@ -14,7 +14,8 @@ double ft_parse_factor(char **str)
     }
     else if (**str == '+' || **str == '-')
     {
-        char op = (**str)++;
+        char op = (**str);
+        (*str)++;
         double v = ft_parse_factor(str);
         return (op == '-') ? -v : v;
     }
