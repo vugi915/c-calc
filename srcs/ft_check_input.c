@@ -27,7 +27,7 @@ bool    ft_check_input(int argc, char **argv)
             }
             else if (argv[1][i] == ')')
                 balance_of_brackets--;
-			else if (argv[1][i] == '.' && argv[1][[i + 1] == '.')
+			else if (argv[1][i] == '.' && argv[1][i + 1] == '.')
 			{
                 printf("%s: incorrect input\n", argv[0]);
 				return (false);
