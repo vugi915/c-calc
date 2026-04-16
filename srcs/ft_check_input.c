@@ -27,7 +27,12 @@ bool    ft_check_input(int argc, char **argv)
             }
             else if (argv[1][i] == ')')
                 balance_of_brackets--;
-            else if (!isdigit(argv[1][i]) && !ft_isoperator(argv[1][i]))
+			else if (argv[1][i] == '.' && argv[1][[i + 1] == '.')
+			{
+                printf("%s: incorrect input\n", argv[0]);
+				return (false);
+			}
+            else if (!isdigit(argv[1][i]) && !ft_isoperator(argv[1][i]) && argv[1][i] != '.')
             {
                 printf("%s: incorrect symbol: %c\n", argv[0], argv[1][i]);
                 return (false);
